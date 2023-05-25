@@ -1,0 +1,7 @@
+{
+  "name": "calculatorionicangular",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
