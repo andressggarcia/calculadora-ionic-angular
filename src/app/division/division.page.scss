@@ -1,0 +1,108 @@
+.div-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(90% - 150px);
+}
+
+form {
+  width: 70%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+}
+.texto-suma {
+  font-size: 18px;
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  color: #2a272a;
+}
+.texto-ingresar__numero{
+    display: flex;
+    width: 400px;
+    height: 35px;
+    font-size: 16px;
+    color: #2a272a;
+    margin-left: 50px;
+    align-items: center;
+}
+.input{
+    max-width: 500px;
+    border-radius: 7.5px;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+.button-resultado{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+    color: #2A272A;
+    font-weight: 600;
+    border:2px solid #2A272A;
+    border-radius: 7.5px;
+}
+.button-resultado:hover{
+    background: #2A272A;
+border-radius: 7.5px;
+color: white;
+}
+.div-resultado{
+    width: 30%;
+}
+.div-resultado > ion-text{
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  justify-content: start;
+  color: #2a272a;
+}
+.div-resultado > h2{
+    font-size: 30px;
+    height: 45px;
+    display: flex;
+    width: 200px;
+    max-width: 300px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 100px;
+    justify-content: center;
+    color: #2a272a;
+    font-weight: 600;
+    border:2px solid #2A272A;
+    border-radius: 7.5px;
+}
+
+.div-resultado > h2:hover{
+    background: #2A272A;
+    border-radius: 7.5px;
+    color: white;
+}
+
+@media  (max-width: 800px) {
+    .div-container{
+        margin-top: 100px;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+    .texto-suma{
+        margin-top: 50px;
+    }
+    .div-resultado > h2{
+        margin-bottom: 30px;
+    }
+    .div-resultado > ion-text{
+        margin-bottom: 10px;
+    }
+}

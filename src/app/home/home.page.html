@@ -1,20 +1,18 @@
+
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
+    <ion-title style="margin-left: 30px; color: #2A272A;">
+      Calculadora
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="container-div">
+    <ion-text class="texto-home">Bienvenido a la calculadora donde podras realizar ( Sumas, Restas, Multiplicaciones y Divisiones  ). Solo se admiten numeros</ion-text>
+    <ion-button fill="outline" color="dark" ><a style="text-decoration: none;" href="suma">SUMA</a></ion-button>
+    <ion-button fill="outline" color="dark" ><a style="text-decoration: none;" href="resta">RESTA</a></ion-button>
+    <ion-button fill="outline" color="dark" ><a style="text-decoration: none;" href="division">DIVISION</a></ion-button>
+    <ion-button fill="outline" color="dark" ><a style="text-decoration: none;" href="multiplicacion">MULTIPLICACION</a></ion-button>
   </div>
 </ion-content>

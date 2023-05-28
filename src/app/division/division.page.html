@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Division</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-text class="texto-suma">
+    En esta pagina podra realizar la division que desee.
+  </ion-text>
+  <div class="div-container">
+    <form>
+      <div class="div suma">
+        <ion-text class="texto-ingresar__numero"
+          >Ingrese el dividendo</ion-text
+        >
+        <ion-input
+          class="input"
+          type="number"
+          fill="outline"
+          placeholder="Sumando"
+          [(ngModel)]="operandoA"
+          name="operandoA"
+        >
+        </ion-input>
+      </div>
+      <div>
+        <ion-text class="texto-ingresar__numero"
+          >Ingrese el divisor</ion-text
+        >
+        <ion-input
+          class="input"
+          type="number"
+          fill="outline"
+          placeholder="Sumando"
+          [(ngModel)]="operandoB"
+          name="operandoB"
+        >
+        </ion-input>
+      </div>
+      <ion-button class="button-resultado" fill="clear" (click)="dividir()"
+        >Dividir</ion-button
+      >
+    </form>
+    <div class="div-resultado">
+      <ion-text>Resultado:</ion-text>
+      <h2>{{resultado}}</h2>
+    </div>
+  </div>
+</ion-content>
